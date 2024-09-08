@@ -1,0 +1,14 @@
+<div class="page-container">
+    <div class="header-container">
+        <h3>Medidas</h3>
+    </div>
+    <app-filters
+        [filterOptions]="filterOptions"
+        [filters]="filters"
+        [onChangeFilters]="onChangeFilters">
+    </app-filters>
+    <data-grid
+        [columns]="columns"
+        [fetchData]="fetchData"
+    ></data-grid>
+</div>

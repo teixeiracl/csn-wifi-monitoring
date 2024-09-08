@@ -1,0 +1,78 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./api
+    container_name: csn_wifi_api
+    ports:
+      - "4011:4011"
+    environment:
+      - DB_HOST=db
+      - DB_USER=postgres
+      - DB_PASS=123456
+      - DB_NAME=mapeamento_csn_dev
+    depends_on:
+      - db
+
+  db:
+    image: postgres:13
+    container_name: csn_wifi_postgres_db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_DB=mapeamento_csn_dev
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  migrate:
+    build:
+      context: ./api
+    container_name: migrate
+    entrypoint: ["npm", "run", "migrate"]
+    environment:
+      - DB_HOST=db
+      - DB_USER=postgres
+      - DB_PASS=123456
+      - DB_NAME=mapeamento_csn_dev
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./front
+    container_name: csn_wifi_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - app
+    environment:
+      - REACT_APP_API_URL=http://csn_wifi_api:4011/mapeamento
+
+  geoserver:
+    image: oscarfonts/geoserver
+    ports:
+      - "8080:8080"
+    environment:
+      - GEOSERVER_ADMIN_PASSWORD=geoserver
+    volumes:
+      - geoserver_data:/var/geoserver/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/geoserver"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  publish_geotiff:
+    build:
+      context: .
+      dockerfile: Dockerfile.publish
+    container_name: publish_geotiff
+    depends_on:
+      - geoserver
+    volumes:
+      - ./CONGONHAS_2018_2019.tif:/app/CONGONHAS_2018_2019.tif
+
+volumes:
+  pgdata:
+  geoserver_data:
