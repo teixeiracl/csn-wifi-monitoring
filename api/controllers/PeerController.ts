@@ -61,14 +61,15 @@ class PeerController {
     }
 
     async getPeersForRssi(request: Request, response: Response) {
-        // peer.ip = ip destination
-        // peer.ipv4Address = ip source
+        // atualizado
+        // peer.ip -> ip source
+        // peer.ipv4Address = ip destination
 
         const peers = await knex.raw(`
             SELECT peer.* FROM peer
-            JOIN system ON peer."ip" = system."ipv4address"
+            JOIN system ON peer."ipv4Address" = system."ipv4address"
             JOIN equipament ON system."idequipament_fk" = equipament."idequipament"
-            WHERE equipament.sigla LIKE 'FIXA%';    
+            WHERE equipament.sigla LIKE 'FIXA%';
         `);
 
         return response.json(peers.rows);
