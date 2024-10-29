@@ -25,11 +25,11 @@ export class MeasuresListPage {
 
     columns: Column[] = [
         {
-            title: "IP",
+            title: "IP ORIGEM",
             dataProp: "ip"
         },
         {
-            title: "IPv4",
+            title: "IP DESTINO",
             dataProp: "ipv4Address"
         },
         {
