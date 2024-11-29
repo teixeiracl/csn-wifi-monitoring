@@ -73,6 +73,26 @@ services:
     volumes:
       - ./CONGONHAS_2018_2019.tif:/app/CONGONHAS_2018_2019.tif
 
+  netminer_python:
+    build:
+      context: ./netminer  # Path to the netminer folder
+      dockerfile: Dockerfile.netminer
+    container_name: netminer_python
+    depends_on:
+      - netminer_java
+    volumes:
+      - logs:/logs  # Shared volume for logs
+
+  netminer_java:
+    build:
+      context: ./netminer_java  # Path to the netminer_java folder
+    container_name: netminer_java
+    depends_on:
+      - db
+    volumes:
+      - logs:/logs  # Shared volume for logs
+
 volumes:
   pgdata:
   geoserver_data:
+  logs:  # Shared volume for netminer_python and netminer_java

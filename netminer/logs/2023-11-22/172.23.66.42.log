@@ -1,0 +1,10 @@
+2023-11-22 10:02:10.677 [Thread-42] INFO  c.r.b.p.PeersRssiAppPeriodico$GetRSSIPeers - ;172.23.66.42;Authentication Failed.
+2023-11-22 10:02:34.392 [Thread-654] INFO  c.r.b.p.PeersRssiAppPeriodico$GetRSSIPeers - ;172.23.66.42;Authentication Failed.
+2023-11-22 10:02:34.392 [SyncBreadCrumbSession[session,290 BCAPI]] INFO  c.r.b.s.sync.SyncBreadCrumbSession - Session[session,290 BCAPI] cannot establish connection
+2023-11-22 10:02:34.392 [SyncBreadCrumbSession[session,280 BCAPI]] INFO  c.r.b.s.sync.SyncBreadCrumbSession - Session[session,280 BCAPI] cannot establish connection
+2023-11-22 10:02:34.395 [SyncBreadCrumbSession[session,289 BCAPI]] INFO  c.r.b.s.sync.SyncBreadCrumbSession - Session[session,289 BCAPI] cannot establish connection
+2023-11-22 10:02:34.395 [SyncBreadCrumbSession[session,260 BCAPI]] INFO  c.r.b.s.sync.SyncBreadCrumbSession - Session[session,260 BCAPI] cannot establish connection
+2023-11-22 10:02:34.395 [SyncBreadCrumbSession[session,297 BCAPI]] INFO  c.r.b.s.sync.SyncBreadCrumbSession - Session[session,297 BCAPI] cannot establish connection
+2023-11-22 10:02:34.395 [SyncBreadCrumbSession[session,279 BCAPI]] INFO  c.r.b.s.sync.SyncBreadCrumbSession - Session[session,279 BCAPI] cannot establish connection
+2023-11-22 10:02:34.395 [SyncBreadCrumbSession[session,283 BCAPI]] INFO  c.r.b.s.sync.SyncBreadCrumbSession - Session[session,283 BCAPI] cannot establish connection
+2023-11-22 10:02:34.403 [SyncBreadCrumbSession[session,288 BCAPI]] INFO  c.r.b.s.sync.SyncBreadCrumbSession - Session[session,288 BCAPI] cannot establish connection

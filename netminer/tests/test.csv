@@ -1,0 +1,2 @@
+data,hora,lat,lon,alt,radio,custo,rssi,ipv4Address,ip,macsource,macdestination,action,enabled,rate,signal_ok,age,stats,encapId,txpower,version,linkLocalAddress
+"2024-10-04",00:09:00,-21.46689365742933,-43.51839918629987,120,50,105,-70,"192.168.0.1","192.168.0.2",0,0,0,1,0,0,0,0,0,0,0,0,0

@@ -1,0 +1,5 @@
+2023-11-22 10:00:00.289 [Thread-71] INFO  c.r.b.p.PeersRssiAppPeriodico$GetRSSIPeers - ;172.23.66.71;Authentication Failed.
+2023-11-22 10:00:26.883 [Thread-711] INFO  c.r.b.p.PeersRssiAppPeriodico$GetRSSIPeers - ;172.23.66.71;Authentication Failed.
+2023-11-22 10:01:18.608 [Thread-1281] INFO  c.r.b.p.PeersRssiAppPeriodico$GetRSSIPeers - ;172.23.66.71;Authentication Failed.
+2023-11-22 10:02:03.573 [Thread-1837] INFO  c.r.b.p.PeersRssiAppPeriodico$GetRSSIPeers - ;172.23.66.71;Authentication Failed.
+2023-11-22 10:02:27.370 [Thread-2414] INFO  c.r.b.p.PeersRssiAppPeriodico$GetRSSIPeers - ;172.23.66.71;Authentication Failed.

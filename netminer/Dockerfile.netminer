@@ -1,0 +1,16 @@
+FROM thinkwhere/gdal-python:3.6-shippable
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the netminer-etl directory into the container
+COPY netminer-etl /app/netminer-etl
+
+# Copy requirements.txt into the container
+COPY requirements.txt /app/requirements.txt
+
+# Install the dependencies from requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+# Set the command to run main.py
+CMD ["python", "./netminer-etl/main.py"]

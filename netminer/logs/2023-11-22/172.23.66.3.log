@@ -1,0 +1,8 @@
+2023-11-22 10:00:01.155 [Thread-3] INFO  c.r.b.p.PeersRssiAppPeriodico$GetRSSIPeers - ;172.23.66.3;Authentication Failed.
+2023-11-22 10:00:23.703 [Thread-564] INFO  c.r.b.p.PeersRssiAppPeriodico$GetRSSIPeers - ;172.23.66.3;Authentication Failed.
+2023-11-22 10:01:16.650 [Thread-1123] INFO  c.r.b.p.PeersRssiAppPeriodico$GetRSSIPeers - ;172.23.66.3;Authentication Failed.
+2023-11-22 10:01:58.727 [Thread-1686] INFO  c.r.b.p.PeersRssiAppPeriodico$GetRSSIPeers - ;172.23.66.3;Authentication Failed.
+2023-11-22 10:02:20.998 [Thread-2239] INFO  c.r.b.p.PeersRssiAppPeriodico$GetRSSIPeers - ;172.23.66.3;Authentication Failed.
+2023-11-22 10:02:20.998 [SyncBreadCrumbSession[session,1019 BCAPI]] INFO  c.r.b.s.sync.SyncBreadCrumbSession - Session[session,1019 BCAPI] cannot establish connection
+2023-11-22 10:02:50.845 [Thread-2809] INFO  c.r.b.p.PeersRssiAppPeriodico$GetRSSIPeers - ;172.23.66.3;Authentication Failed.
+2023-11-22 10:02:50.845 [SyncBreadCrumbSession[session,1273 BCAPI]] INFO  c.r.b.s.sync.SyncBreadCrumbSession - Session[session,1273 BCAPI] cannot establish connection

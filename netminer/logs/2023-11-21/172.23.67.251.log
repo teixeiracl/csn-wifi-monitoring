@@ -1,0 +1,4 @@
+2023-11-21 09:16:28.173 [Thread-251] INFO  c.r.b.p.PeersRssiAppPeriodico$GetRSSIPeers - ;172.23.67.251;Authentication Failed.
+2023-11-21 09:16:55.223 [Thread-1112] INFO  c.r.b.p.PeersRssiAppPeriodico$GetRSSIPeers - ;172.23.67.251;Authentication Failed.
+2023-11-21 09:17:24.085 [Thread-1664] INFO  c.r.b.p.PeersRssiAppPeriodico$GetRSSIPeers - ;172.23.67.251;Authentication Failed.
+2023-11-21 09:17:24.086 [SyncBreadCrumbSession[session,760 BCAPI]] INFO  c.r.b.s.sync.SyncBreadCrumbSession - Session[session,760 BCAPI] cannot establish connection

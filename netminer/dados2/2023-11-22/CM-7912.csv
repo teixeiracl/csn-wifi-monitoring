@@ -1,0 +1,2 @@
+data,hora,lat,lon,alt,radio,custo,rssi,ipv4Address,ip,macsource,macdestination,action,enabled,rate,signal_ok,age,stats,encapId,txpower,version,linkLocalAddress
+2023-11-22,10:00,0.0,0.0,100,LX5,42821,-55,172.23.67.114,172.23.67.85, , ,0,1,0,0,0,0,0,0,11.24.2, 
